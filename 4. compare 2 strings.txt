@@ -1,0 +1,49 @@
+// Function to compare two strings using strict equality
+
+function compareStrings(string1, string2) {
+  if (string1 === string2) {
+    return "The strings are equal.";
+  } else {
+    return "The strings are not equal.";
+  }
+}
+const stringA = "Kartik";
+const stringB = "Desai";
+
+const result1 = compareStrings(stringA, stringB);
+console.log(result1);
+
+// Function to compare two strings using comparison operators
+
+function compareStrings(string1, string2) {
+  if (string1 > string2) {
+    return "string1 is greater than string2.";
+  } else if (string1 < string2) {
+    return "string1 is less than string2.";
+  } else {
+    return "Both strings are equal.";
+  }
+}
+const string1 = "Javascript";
+const string2 = "Manual";
+
+const result2 = compareStrings(string1, string2);
+console.log(result2);
+
+// Function to compare two strings using localeCompare() method
+function compareStrings(string1, string2) {
+  const res = string1.localeCompare(string2);
+  
+  if (res < 0) {
+    return "string1 is less than string2.";
+  } else if (res > 0) {
+    return "string1 is greater than string2.";
+  } else {
+    return "Both strings are equal.";
+  }
+}
+const stringX = "Kartik";
+const stringY = "Desai";
+
+const result3 = compareStrings(stringX, stringY);
+console.log(result3);

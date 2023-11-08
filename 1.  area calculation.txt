@@ -1,0 +1,8 @@
+var a = 4;
+var b = 5;
+const pi = 3.14;
+console.log("A = " + a);
+console.log("B = " + b);
+console.log("Area of Rectangle: " + (a * b));
+console.log("Area of Circle: " + (pi * (b * b)));
+console.log("Area of Triangle: " + (a * b) / 2);

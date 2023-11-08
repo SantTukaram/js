@@ -1,0 +1,62 @@
+REVERSE
+ 
+function reverseString(inputString) {
+  // Split the string into an array of characters, reverse the array, and join it back into a string
+  return inputString.split('').reverse().join('');
+}
+
+
+const inputString = "Hello, world!";
+
+// Reverse the input string
+const reversedString = reverseString(inputString);
+
+console.log("Original String:", inputString);
+console.log("Reversed String:", reversedString);
+
+
+
+REPLACE
+
+function replaceCharacters(inputString, searchCharacter, replaceCharacter) {
+  const regex = new RegExp(searchCharacter, 'g');
+  const result = inputString.replace(regex, replaceCharacter);
+  return result;
+}
+
+
+const inputString = "Hello, world!";
+const searchCharacter = "o";
+const replaceCharacter = "0";
+
+
+const modifiedString = replaceCharacters(inputString, searchCharacter, replaceCharacter);
+
+console.log("Original String:", inputString);
+console.log("Modified String:", modifiedString);
+
+
+PALINDROME
+
+
+
+function isPalindrome(inputString) {
+  
+const cleanString = inputString.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+const reversedString = cleanString.split('').reverse().join('');
+
+  
+  return cleanString === reversedString;
+}
+
+
+const inputString = "A man, a plan, a canal, Panama";
+
+if (isPalindrome(inputString)) {
+  console.log(`"${inputString}" is a palindrome.`);
+} else {
+  console.log(`"${inputString}" is not a palindrome.`);
+}
+
+
+

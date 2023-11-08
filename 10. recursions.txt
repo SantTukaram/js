@@ -1,0 +1,13 @@
+function factorial(n) {
+  if (n === 0) {
+    // Base case: 0! is 1
+    return 1;
+  } else {
+    // Recursive case: n! = n * (n-1)!
+    return n * factorial(n - 1);
+  }
+}
+
+const number = 5; // Change this to your desired number
+const result = factorial(number);
+console.log(`Factorial of ${number} is ${result}`);

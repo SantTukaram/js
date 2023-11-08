@@ -1,0 +1,28 @@
+// Create an array
+let myArray = [1, 2, 3, 4, 5];
+
+// i. To remove a specific element from the array
+function removeElement(arr, element) {
+    const index = arr.indexOf(element);
+    if (index !== -1) {
+        arr.splice(index, 1);
+    }
+}
+
+// ii. Check if an array contains a specified value
+function containsValue(arr, value) {
+    return arr.includes(value);
+}
+
+// iii. To empty an array
+function emptyArray(arr) {
+    arr.length = 0;
+}
+
+// Test the operations
+console.log("Original Array: " + myArray);
+removeElement(myArray, 3);
+console.log("Array after removing 3: " + myArray);
+console.log("Array contains 4: " + containsValue(myArray, 4));
+emptyArray(myArray);
+console.log("Array after emptying: " + myArray);

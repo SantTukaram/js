@@ -1,0 +1,70 @@
+USING ON MOUSE OVER
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        #homepage {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="homepage">
+        <h1>Welcome to My Website</h1>
+        <p>This is the homepage of my website.</p>
+    </div>
+
+    <script>
+        // JavaScript code to change the background color on mouseover
+        const homepageDiv = document.getElementById('homepage');
+
+        // Function to change the background color on mouseover
+        homepageDiv.onmouseover = function() {
+            const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            homepageDiv.style.backgroundColor = randomColor;
+        };
+    </script>
+</body>
+</html>
+
+
+
+USING ONFOCUS EVENT
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        #homepage {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="homepage">
+        <h1>Welcome to My Website</h1>
+        <p>This is the homepage of my website.</p>
+        <input type="text" id="colorInput" placeholder="Click here to change background color">
+    </div>
+
+    <script>
+        // JavaScript code to change the background color on input focus
+        const homepageDiv = document.getElementById('homepage');
+        const colorInput = document.getElementById('colorInput');
+
+        // Function to change the background color on input focus
+        colorInput.onfocus = function() {
+            const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            homepageDiv.style.backgroundColor = randomColor;
+        };
+    </script>
+</body>
+</html>
+
